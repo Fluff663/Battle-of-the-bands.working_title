@@ -3,31 +3,28 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Eileen")
+define test1 = Character("Power")
 
 
 # The game starts here.
 
+#say hide after showing an image! oe ti will overlay
 label start:
+    show evilwoman
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+    test1 "Hello! This is a renpy test"
 
-    scene bg room
+    hide evilwoman
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
+    show power
 
-    show eileen happy
+    test1 "This should change image!"
 
-    # These display lines of dialogue.
+    hide power
 
-    e "You've created a new Ren'Py game."
+    show man
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    test1 "Hewwo!"
 
-    # This ends the game.
 
     return
